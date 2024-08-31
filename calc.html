@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <link src="calc.js">
+<body class="calculator">
+    <center>
+    <font size="10">
+    <marquee direction="right" behavior="alternative">CALCULATOR</marquee>
+    </font>
+    <div class="calc">
+        <input type="text" id="display" >
+    <div class="buttons">
+        <div class="button">
+        <button onclick="appendngitumber('9')">9</button>
+        <button onclick="appendnumber('8')">8</button>
+        <button onclick="appendnumber('7')">7</button>
+        </div>
+        <div class="button">
+            <button onclick="appendnumber('6')">6</button>
+            <button onclick="appendnumber('5')">5</button>
+            <button onclick="appendnumber('4')">4</button>
+        </div>
+        <div class="button">  
+            <button onclick="appendnumber('3')">3</button>
+            <button onclick="appendnumber('2')">2</button>
+            <button onclick="appendnumber('1')">1</button>
+        </div>
+        <div class="button">
+            <button onclick="setoperation('+')">+</button>   
+            <button onclick="appendnumber(0)">0</button>
+            <button onclick="setoperation('-')">-</button>   
+        </div>  
+        <div class="button">
+            <button onclick="setoperation('*')">*</button>  
+            <button onclick="cleardisplay()">c</button>  
+            <button onclick="setoperation('/')">/</button>  
+        </div>           
+            <button onclick="calculateresult()">=</button>  
+    </div>
+    </div>
+    </center>
+</body>
+</html>
