@@ -1,6 +1,7 @@
 let currentinput='';
 let operation='';
-let firtsnumber='';
+let firstnumber='';
+let pinput='';
 function appendnumber(number){
     currentinput +=number;
     updatedisplay();
@@ -8,8 +9,12 @@ function appendnumber(number){
 function setoperation(op){
     firstnumber=currentinput;
     operation=op;
+    currentinput+=operation;
+    updatedisplay();
     currentinput='';
+    
 }
+
 function calculateresult(){
     if(firstnumber&&operation&&currentinput){
         currentinput=eval(firstnumber+operation+currentinput);
@@ -25,5 +30,5 @@ function cleardisplay(){
     updatedisplay();
 }
 function updatedisplay(){
-    document.getElementById('display').value=currentinput;
+        document.getElementById('display').value =currentinput;
 }
